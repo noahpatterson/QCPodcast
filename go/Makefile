@@ -3,7 +3,7 @@
 #
 
 #Check all the code things - fmt, imports, vet and lint
-code-check: fmt imports vet lint
+code-check: imports vet lint
 
 #Go Format all the code
 fmt:
@@ -27,4 +27,4 @@ serve-eps: code-check
 	gb gae serve -port 8080 -host 0.0.0.0 $(EPS_MODULE)
 
 deploy-eps:
-	gb gae deploy $(EPS_MODULE)
+	gcloud app deploy $(EPS_MODULE) --project qcpodcast-201423

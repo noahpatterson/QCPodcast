@@ -6,4 +6,5 @@
 /site/public/*
 /site/*.json
 /public
+*.mp3
 

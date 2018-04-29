@@ -25,7 +25,7 @@ import (
 )
 
 const (
-	bucket     = "https://storage.googleapis.com/eps/"
+	bucket     = "https://storage.googleapis.com/qc-podcast-episodes/"
 	episodeKey = "episode"
 )
 

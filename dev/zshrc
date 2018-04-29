@@ -65,3 +65,6 @@ source /google-cloud-sdk/completion.zsh.inc
 
 #add appengine to the path
 export PATH=/go_appengine:$GOPATH/bin:/usr/src/go/bin:$PATH
+
+#add go to path
+export PATH=$PATH:/usr/local/go/bin

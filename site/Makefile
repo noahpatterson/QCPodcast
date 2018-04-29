@@ -12,10 +12,10 @@ build: clean
 	hugo
 
 deploy: build
-	gcloud app deploy app.yaml --project gcppodcast --no-promote
+	gcloud app deploy app.yaml --project qcpodcast-201423 --no-promote
 
 deploy-default: build
-	gcloud app deploy app.yaml --project gcppodcast --promote
+	gcloud app deploy app.yaml --project qcpodcast-201423 --promote
 
 categories:
 	grep "^categories" content/post/*.md | sed "s/.*\[\(.*\)]\.*/\1/" | tr "," "\n" | sed "s/.*\"\(.*\)\".*/\1/" | sort | uniq -c | sort -nr

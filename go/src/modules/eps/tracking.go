@@ -25,7 +25,7 @@ import (
 	"google.golang.org/appengine/urlfetch"
 )
 
-const gaUA = "UA-66340814-1"
+const gaUA = "UA-118346869-1"
 
 // sendGADownloadEvent sends GA an event that has a
 // category of "episode-download" and an

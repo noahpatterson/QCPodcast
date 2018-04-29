@@ -33,7 +33,7 @@ function shareFacebook(title, url) {
     url = encodeURIComponent(url);
 
     window.open('https://www.facebook.com/dialog/share' +
-            '?app_id=1653280564942689' +
+            '?app_id=' +
             '&display=popup' +
             '&href=' + url +
             '&redirect_uri=' + url);
@@ -63,7 +63,7 @@ function captureAudioPlay() {
         item.addEventListener("play", function() {
             if (!item.dataset.played) {
                 item.dataset.played = true;
-                floodLight("googl004"); // Floodlight for Podcast Google Playing
+                // floodLight("googl004"); // Floodlight for Podcast Google Playing
             }
         });
     });

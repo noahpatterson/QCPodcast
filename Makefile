@@ -5,7 +5,7 @@
 #--- Host Targets ---
 
 TAG=gcr.io/gcppodcast/dev
-NAME=gcppodcast-dev
+NAME=qc-podcast-dev
 
 # build the docker image
 build:

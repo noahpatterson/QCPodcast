@@ -13,21 +13,21 @@
 		{{ with .Site.Author.email }}<managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}
 		{{ with .Site.Author.email }}<webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}
 		{{ with .Site.Params.copyright }}<copyright>{{.}}</copyright>{{end}}
-		<category>Technology:Tech News</category>
+		<category>Arts:Visual Arts</category>
 		<ttl>1440</ttl>
 		{{ if not .Date.IsZero }}<lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
 		<atom:link href="{{.URL}}" rel="self" type="application/rss+xml"/>
-		<itunes:subtitle>Weekly News and Commentary</itunes:subtitle>
-		<itunes:author>Google Cloud Platform</itunes:author>
-		<itunes:category text="Technology">
-			<itunes:category text="Tech News"/>
+		<itunes:subtitle>A podcast about the Questionable Content Comic</itunes:subtitle>
+		<itunes:author>Kate Drake and Jessica Williamson</itunes:author>
+		<itunes:category text="Arts">
+			<itunes:category text="Visual Arts"/>
 		</itunes:category>
 		<itunes:owner>
-			<itunes:name>Google Cloud Platform</itunes:name>
-			<itunes:email>hello@gcppodcast.com</itunes:email>
+			<itunes:name>QC-Podcast</itunes:name>
+			<itunes:email>hello@qc-podcast.com</itunes:email>
 		</itunes:owner>
 		<itunes:explicit>No</itunes:explicit>
-		<itunes:image href="http://www.gcppodcast.com/images/logo_large.png"/>
+		<itunes:image href="http://www.qc-podcast.com/images/logo_large.png"/>
 		{{ range first 156 .Data.Pages }}
 		<item>
 			<title>{{ .Title }}</title>

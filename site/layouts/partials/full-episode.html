@@ -16,18 +16,11 @@
 
         <div class="hosts">
             {{ range .Params.hosts }}
-            <img src="/images/hosts/{{ replace . " " "_" }}.png">
+            <img src="/images/hosts/{{ replace . " " "_" }}.jpg">
             {{ end }}
         </div>
 
         <p>{{ .Content }}</p>
-
-        {{ if .Params.linked }}
-        <p id="linked">Continue the conversation on:
-            <a href="{{ .Params.googlepluslink}}" target="_blank">Google+</a>
-            or <a href="{{ .Params.redditlink}}" target="_blank">Reddit</a>
-        </p>
-        {{ end }}
 
         <footer class="mdl-mini-footer mdl-color--white podcast-topic">
             <p><strong>Hosts: </strong>{{ delimit .Params.hosts ", " " and " }}</p>
