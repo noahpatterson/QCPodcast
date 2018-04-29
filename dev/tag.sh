@@ -1,8 +1,9 @@
 #!/bin/bash
 # to install eyeD3 - sudo pip install eyeD3
+# <!-- Modified 4-29-2018 by QC-Podcast -->
 
 # Arguments Name of mp3, Episode number-the actual number, title of episode, episode part number
-
+# ./tag.sh 'QC.Podcast.Episode.1a' 1 'Questionable Pilot - Part 1' '1a'
 # name of the file
 FILE=QC.Podcast.Episode.$4.mp3
 # directory the script
